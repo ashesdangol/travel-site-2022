@@ -1,13 +1,19 @@
+$hero__title--color: var(--ligthblue);
+
 .large-hero {
   position: relative;
   border: 1px solid red;
   &__text-content {
-    border: 2px solid blue;
+    border: 2px solid var(--ligthblue);
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: 0;
     width: 100%;
     text-align: center;
+  }
+  &__title {
+    font-weight: 300;
+    color: $hero__title--color;
   }
 }
