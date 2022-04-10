@@ -1,6 +1,3 @@
-$hero__title--color: var(--ligthblue);
-$hero__subtitle--color: var(--ligthblue);
-$hero__description--color: #fff;
 .large-hero {
   position: relative;
   border: 1px solid red;

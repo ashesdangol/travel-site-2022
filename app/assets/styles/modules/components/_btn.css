@@ -1,0 +1,16 @@
+.btn {
+  color: white;
+  text-decoration: none;
+  padding: 12px 19px;
+  display: inline-block;
+  &--primary-color {
+    background-color: $btn--primary-color;
+  }
+  &--secondary-color {
+    background-color: $btn--secondary-color;
+  }
+  &--large {
+    font-size: 20px;
+    padding: 18px 30px;
+  }
+}

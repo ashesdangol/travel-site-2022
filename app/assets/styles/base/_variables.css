@@ -1,0 +1,18 @@
+/* global variables*/
+
+:root {
+  --ligthblue: #2f5572;
+  --orange: #d59541;
+  --red: red;
+}
+
+/* large hero variables*/
+
+$hero__title--color: var(--ligthblue);
+$hero__subtitle--color: var(--ligthblue);
+$hero__description--color: #fff;
+
+/* Button variables */
+
+$btn--primary-color: var(--ligthblue);
+$btn--secondary-color: var(--orange);
