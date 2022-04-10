@@ -1,5 +1,6 @@
 $hero__title--color: var(--ligthblue);
-
+$hero__subtitle--color: var(--ligthblue);
+$hero__description--color: #fff;
 .large-hero {
   position: relative;
   border: 1px solid red;
@@ -16,5 +17,23 @@ $hero__title--color: var(--ligthblue);
     font-weight: 300;
     color: $hero__title--color;
     font-size: 72px;
+    border: 2px solid red;
+    margin: 0;
+  }
+  &__subtitle {
+    font-weight: 300;
+    color: $hero__subtitle--color;
+    font-size: 46px;
+    margin: 0;
+  }
+  &__description {
+    border: 1px solid red;
+    font-size: 30px;
+    color: $hero__description--color;
+    font-weight: 100;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
