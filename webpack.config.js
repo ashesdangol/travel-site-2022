@@ -10,7 +10,8 @@ module.exports = {
   devServer: {
     static: path.join(__dirname, "app"),
     hot: true,
-    port: 3000
+    port: 3000,
+    liveReload: false
   },
   mode: "development",
   module: {
