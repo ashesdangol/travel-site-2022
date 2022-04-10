@@ -1,0 +1,23 @@
+{
+  "name": "travel-site-2022",
+  "version": "1.0.0",
+  "description": "Ashes Showcase project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashesdangol/travel-site-2022.git"
+  },
+  "author": "ashes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashesdangol/travel-site-2022/issues"
+  },
+  "homepage": "https://github.com/ashesdangol/travel-site-2022#readme",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "normalize.css": "^8.0.1"
+  }
+}
