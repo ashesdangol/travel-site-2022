@@ -16,7 +16,8 @@ module.exports = {
     },
     hot: true,
     port: 3000,
-    host: "0.0.0.0"
+    host: "0.0.0.0",
+    allowedHosts: "auto"
   },
   mode: "development",
   module: {

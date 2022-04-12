@@ -1,8 +1,10 @@
 .large-hero {
+  border-bottom: 10px solid var(--primary-color);
   position: relative;
-  border: 1px solid red;
+  &__image {
+    display: block;
+  }
   &__text-content {
-    border: 1px solid var(--ligthblue);
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -13,16 +15,9 @@
   &__title {
     font-weight: 300;
     color: $hero__title--color;
-    font-size: 18px;
-    border: 2px solid red;
+    font-size: 38px;
     margin: 0;
     @mixin atSmall {
-      font-size: 32px;
-    }
-    @mixin atMedium {
-      font-size: 51px;
-    }
-    @mixin atLarge {
       font-size: 79px;
     }
   }
@@ -30,18 +25,21 @@
     font-weight: 300;
     color: $hero__subtitle--color;
     margin: 0;
+    font-size: 24px;
     @mixin atSmall {
       font-size: 46px;
     }
   }
   &__description {
-    border: 1px solid red;
-    font-size: 30px;
+    font-size: 18px;
     color: $hero__description--color;
     font-weight: 100;
     text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
     max-width: 480px;
     margin-left: auto;
     margin-right: auto;
+    @mixin atSmall {
+      font-size: 30px;
+    }
   }
 }
