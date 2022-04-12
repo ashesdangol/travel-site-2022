@@ -29,3 +29,7 @@ $headline--second-color: var(--second-color);
 a {
   color: var(--second-color);
 }
+
+/* Features */
+$feature-all-text--color: white;
+$feature-item-text--color: white;
