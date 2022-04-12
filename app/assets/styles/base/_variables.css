@@ -1,18 +1,31 @@
 /* global variables*/
 
 :root {
-  --ligthblue: #2f5572;
-  --orange: #d59541;
-  --red: red;
+  --primary-color: #2f5572;
+  --second-color: #d59541;
 }
 
 /* large hero variables*/
 
-$hero__title--color: var(--ligthblue);
-$hero__subtitle--color: var(--ligthblue);
+$hero__title--color: var(--primary-color);
+$hero__subtitle--color: var(--primary-color);
 $hero__description--color: #fff;
 
 /* Button variables */
 
-$btn--primary-color: var(--ligthblue);
-$btn--secondary-color: var(--orange);
+$btn--primary-color: var(--primary-color);
+$btn--secondary-color: var(--second-color);
+
+/* Page section */
+
+$page-section--primary-bg: var(--primary-color);
+
+/* Headline */
+
+$headline--primary-color: var(--primary-color);
+$headline--second-color: var(--second-color);
+
+/* anchor links */
+a {
+  color: var(--second-color);
+}
