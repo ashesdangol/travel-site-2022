@@ -29,4 +29,12 @@
   &--b-margin-large {
     margin-bottom: 1.6em;
   }
+  &--no-t-margin {
+    @mixin atSmall {
+      margin: 18px;
+    }
+    @mixin atMedium {
+      margin: 0;
+    }
+  }
 }

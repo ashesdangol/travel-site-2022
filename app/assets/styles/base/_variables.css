@@ -24,3 +24,8 @@ $page-section--primary-bg: var(--primary-color);
 
 $headline--primary-color: var(--primary-color);
 $headline--second-color: var(--second-color);
+
+/* anchor links */
+a {
+  color: var(--second-color);
+}
