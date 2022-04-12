@@ -13,15 +13,26 @@
   &__title {
     font-weight: 300;
     color: $hero__title--color;
-    font-size: 72px;
+    font-size: 18px;
     border: 2px solid red;
     margin: 0;
+    @mixin atSmall {
+      font-size: 32px;
+    }
+    @mixin atMedium {
+      font-size: 51px;
+    }
+    @mixin atLarge {
+      font-size: 79px;
+    }
   }
   &__subtitle {
     font-weight: 300;
     color: $hero__subtitle--color;
-    font-size: 46px;
     margin: 0;
+    @mixin atSmall {
+      font-size: 46px;
+    }
   }
   &__description {
     border: 1px solid red;

@@ -1,4 +1,4 @@
-const postCSSPlugins = [require("postcss-pxtorem")({ propWhiteList: [] }), require("postcss-import"), require("postcss-simple-vars"), require("postcss-nested"), require("autoprefixer")]
+const postCSSPlugins = [require("postcss-mixins"), require("postcss-pxtorem")({ propWhiteList: [] }), require("postcss-import"), require("postcss-simple-vars"), require("postcss-nested"), require("autoprefixer")]
 
 const { watch } = require("fs")
 const path = require("path")
