@@ -2,7 +2,8 @@
   &--t-padding {
     margin-top: 120px;
   }
-  @mixin clearfix;
+  @mixin clearfix {
+  }
   &--gutters {
     margin-right: -65px;
   }
