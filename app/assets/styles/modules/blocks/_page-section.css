@@ -5,6 +5,36 @@
   }
 
   &--blue {
-    background-color: $page-section--primary-bg;
+    background-color: $page-section--bg-blue;
+  }
+  &--custom-color {
+    background-color: $page-section--custom-color;
+  }
+  &__bg-img-1 {
+    background-color: $mobile-background-color;
+    @mixin atMedium {
+      background: $page-section--bg-img-1;
+      background-size: cover;
+    }
+  }
+  &__bg-img-2 {
+    background-color: $mobile-background-color;
+    @mixin atMedium {
+      background: $page-section--bg-img-2;
+      background-size: cover;
+    }
+  }
+  &__bg-img-3 {
+    background-color: $mobile-background-color;
+    @mixin atMedium {
+      background: $page-section--bg-img-3;
+      background-size: cover;
+    }
+  }
+  &--no-b-padding-until-medium {
+    padding-bottom: 0;
+    @mixin atMedium {
+      padding-bottom: 4.5rem;
+    }
   }
 }

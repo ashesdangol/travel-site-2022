@@ -3,13 +3,16 @@
 :root {
   --primary-color: #2f5572;
   --second-color: #d59541;
+  --light-blue: #e0e6ef;
+  --white-color: #ffffff;
+  --transparent-white: rgba(255, 255, 255, 0.8);
 }
 
 /* large hero variables*/
 
 $hero__title--color: var(--primary-color);
 $hero__subtitle--color: var(--primary-color);
-$hero__description--color: #fff;
+$hero__description--color: var(--white-color);
 
 /* Button variables */
 
@@ -18,8 +21,11 @@ $btn--secondary-color: var(--second-color);
 
 /* Page section */
 
-$page-section--primary-bg: var(--primary-color);
-
+$page-section--bg-blue: var(--primary-color);
+$page-section--custom-color: var(--second-color);
+$page-section--bg-img-1: url("../../assets/images/testimonials-bg.jpg") top center no-repeat;
+$page-section--bg-img-2: url("../../assets/images/testimonials-bg.jpg") top center no-repeat;
+$page-section--bg-img-3: url("../../assets/images/testimonials-bg.jpg") top center no-repeat;
 /* Headline */
 
 $headline--primary-color: var(--primary-color);
@@ -29,7 +35,18 @@ $headline--second-color: var(--second-color);
 a {
   color: var(--second-color);
 }
+/* Title color */
+$title-color--blue: var(--primary-color);
+$title-color--white: var(--white-color);
 
 /* Features */
-$feature-all-text--color: white;
-$feature-item-text--color: white;
+$feature-all-text--color: var(--white-color);
+$feature-item-text--color: var(--white-color);
+
+/* Testimonial */
+$testimonial--title-color: var(--white-color);
+$testimonial-bg--color: var(--transparent-white);
+$testimonial-photo--border-radius-color: var(--transparent-white);
+$testimonial--heading-color-one: var(--primary-color);
+$testimonial--heading-color-two: var(--second-color);
+$mobile-background-color: var(--light-blue);
