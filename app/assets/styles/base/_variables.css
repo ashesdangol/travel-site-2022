@@ -50,3 +50,7 @@ $testimonial-photo--border-radius-color: var(--transparent-white);
 $testimonial--heading-color-one: var(--primary-color);
 $testimonial--heading-color-two: var(--second-color);
 $mobile-background-color: var(--light-blue);
+
+/* Footer  */
+$footer-bg-color: var(--primary-color);
+$site-footer-color: var(--white-color);
