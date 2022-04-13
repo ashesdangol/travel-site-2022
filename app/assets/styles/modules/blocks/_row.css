@@ -2,7 +2,10 @@
   &--t-padding {
     margin-top: 120px;
   }
-  @mixin clearfix {
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
   }
   &--gutters {
     margin-right: -65px;

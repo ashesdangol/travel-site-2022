@@ -1,22 +1,42 @@
 .primary-nav {
+  padding-top: 10px;
+  @mixin atMedium {
+    padding-top: 0;
+  }
   &--pull-right {
-    float: right;
+    @mixin atMedium {
+      float: right;
+    }
   }
   ul {
     margin: 0;
     padding: 0;
-    @mixin clearfix {
+    &::after {
+      content: "";
+      clear: both;
+      display: table;
     }
     li {
       list-style: none;
-      float: left;
+      display: inline-block;
       padding-right: 20px;
+      @mixin atMedium {
+        float: left;
+        display: block;
+      }
       a {
         font-weight: 300;
         text-decoration: none;
         color: $primary-nav-link-color;
-        padding: 12px 0;
+        padding: 5px 8px;
+        font-size: 0.8rem;
         display: block;
+        background-color: $nav-list-bg-color;
+        @mixin atMedium {
+          padding: 12px 10px;
+          font-size: 1rem;
+          background-color: transparent;
+        }
       }
     }
   }
