@@ -50,4 +50,25 @@
       display: flex;
     }
   }
+  @mixin atOddSize {
+    &__oddSize-6 {
+      float: left;
+      width: 50%;
+
+      &:last-child {
+        margin-top: 95px;
+      }
+    }
+  }
+  &--equal-height-at-oddSize {
+    @mixin atOddSize {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    & > div {
+      float: none;
+      display: flex;
+    }
+  }
 }

@@ -9,6 +9,11 @@
     @mixin-content;
   }
 }
+@define-mixin atOddSize {
+  @media (min-width: 800px) and (max-width: 1010px) {
+    @mixin-content;
+  }
+}
 @define-mixin atLarge {
   @media (min-width: 1200px) {
     @mixin-content;
