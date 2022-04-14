@@ -57,8 +57,10 @@ $site-footer-color: var(--white-color);
 
 /* Header */
 $site-header-bg-color: rgba(47, 85, 114, 0.3);
+$site-header-bg-color--dark: rgba(47, 85, 114, 0.85);
 $primary-nav-link-color: var(--white-color);
 $site-header-logo-bg-color: var(--primary-color);
-$site-header-menu-icon-color: var(--white-color);
-$site-header-expanded--color: rgba(47, 85, 114, 0.6);
+$site-header-menu-icon-color: #2c3a47;
+$site-header-menu-icon-color--sticky: var(--white-color);
+$site-header-expanded--color: rgba(0, 0, 0, 0.3);
 $nav-list-bg-color: rgba(47, 85, 114, 0.5);

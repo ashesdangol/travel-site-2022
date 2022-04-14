@@ -1,5 +1,4 @@
 .reveal-item {
-  border: 1px solid red;
   opacity: 0;
   transition: opacity 1.5s ease-out, transform 1.5s ease-out;
   transform: scale(1.15);

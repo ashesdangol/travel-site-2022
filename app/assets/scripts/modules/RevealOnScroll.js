@@ -14,7 +14,6 @@ class RevealOnScroll {
     window.addEventListener(
       "resize",
       debounce(() => {
-        console.log("resize ran")
         this.browserHeight = window.innerHeight
       }, 333)
     )
@@ -37,7 +36,6 @@ class RevealOnScroll {
 
   calculateIfScrolledTo(el) {
     if (window.scrollY + this.browserHeight > el.offsetTop) {
-      console.log("el was calculated")
       let scrollPercent = (el.getBoundingClientRect().top / this.browserHeight) * 100
       if (scrollPercent < this.thresholdPercent) {
         el.classList.add("reveal-item--is-visible")
