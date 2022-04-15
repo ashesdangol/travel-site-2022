@@ -64,3 +64,10 @@ $site-header-menu-icon-color: #2c3a47;
 $site-header-menu-icon-color--sticky: var(--white-color);
 $site-header-expanded--color: rgba(0, 0, 0, 0.3);
 $nav-list-bg-color: rgba(47, 85, 114, 0.5);
+
+/* Modal */
+
+$modal--bg-color: rgba(255, 255, 255, 0.94);
+$modal-x--color: var(--primary-color);
+$model-x-hover--color: var(--second-color);
+$social-icon---bgcolor: var(--second-color);

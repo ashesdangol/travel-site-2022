@@ -1,0 +1,42 @@
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.2);
+  transition: transform 0.3s ease-out;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $modal--bg-color;
+  z-index: 101;
+  display: flex;
+  &--is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+  &__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 32px;
+    padding: 20px;
+    cursor: pointer;
+    color: $modal-x--color;
+    transform: scaleX(1.2);
+    transform-origin: 100% 0;
+    &:hover {
+      color: $model-x-hover--color;
+    }
+  }
+  &__inner {
+    flex: 1;
+    margin: auto;
+  }
+  &__description {
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 1.65;
+  }
+}

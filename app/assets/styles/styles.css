@@ -16,3 +16,5 @@
 @import "modules/components/_site-header";
 @import "modules/components/_primary-nav";
 @import "modules/components/_reveal-item";
+@import "modules/components/_modal";
+@import "modules/components/_social-icons";
