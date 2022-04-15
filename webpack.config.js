@@ -3,7 +3,7 @@ const postCSSPlugins = [require("postcss-mixins"), require("postcss-pxtorem")({ 
 
 const { watch } = require("fs")
 const path = require("path")
-
+const { CleanWebpackPlugin } = require("clean-webpack-plugin")
 let config = {
   entry: "./app/assets/scripts/App.js",
   module: {
@@ -47,10 +47,15 @@ if (currenTask == "dev") {
 }
 if (currenTask == "build") {
   config.output = {
-    filename: "bundled.js",
+    filename: "[name].[chunkhash].js",
+    chunkFilename: "[name].[chunkhash].js",
     path: path.resolve(__dirname, "dist")
   }
   config.mode = "production"
+  config.optimization = {
+    splitChunks: { chunks: "all" }
+  }
+  config.plugins = [new CleanWebpackPlugin()]
 }
 
 module.exports = config
