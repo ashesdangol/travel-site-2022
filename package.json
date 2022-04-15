@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/ashesdangol/travel-site-2022#readme",
   "dependencies": {
+    "lazysizes": "^5.3.2",
     "lodash": "^4.17.21",
     "normalize.css": "^8.0.1"
   },
